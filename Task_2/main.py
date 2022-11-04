@@ -1,17 +1,17 @@
-
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def compute(max_number: int) -> int:
+    a, b = 1, 1
+    res = 0
+    while a <= max_number:
+        a, b = b, a+b
+        if a % 2 == 0:
+            res += a
+    return res
 
 
-# Press the green button in the gutter to run the script.
+def run():
+    print(compute(4_000_000))
+
+
 if __name__ == '__main__':
-    print_hi('PyCha123123123rm')
+    run()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
