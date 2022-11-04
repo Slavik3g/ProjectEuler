@@ -1,8 +1,8 @@
 def compute(max_number: int) -> int:
     a, b = 1, 1
     res = 0
-    while a <= max_number:
-        a, b = b, a+b
+    while a < max_number:
+        a, b = a + b, a
         if a % 2 == 0:
             res += a
     return res
